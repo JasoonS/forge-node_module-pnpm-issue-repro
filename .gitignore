@@ -127,3 +127,7 @@ dist
 
 # Secrets
 secretsManager.js
+
+# Foundry
+cache/
+out/

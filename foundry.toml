@@ -1,0 +1,12 @@
+## defaults for _all_ profiles
+[profile.default]
+test = 'contracts/tests'
+src = 'contracts/contracts'
+out = 'contracts/out'
+cache_path = 'contracts/cache'
+libs = ["node_modules", "contracts/lib"]
+remappings = [
+  '@openzeppelin/=node_modules/@openzeppelin/',
+  '@chainlink/=node_modules/@chainlink/',
+  'forge-std/src/=contracts/lib/forge-std/src/',
+]
