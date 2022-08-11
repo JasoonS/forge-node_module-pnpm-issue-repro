@@ -3,15 +3,7 @@
   "solidity.defaultCompiler": "remote",
   "solidity.compileUsingRemoteVersion": "0.8.15",
   // Get contract packages from the correct node_modules folder
-  "solidity.packageDefaultDependenciesDirectory": "contracts/node_modules",
-  "solidity.remappings": [
-    // remap the forge contract libraries
-    "ds-test/=contracts/lib/ds-test/src/",
-    "forge-std/=contracts/lib/forge-std/src/",
-    "@chainlink=contracts/node_modules/@chainlink",
-    "@openzeppelin=contracts/node_modules/@openzeppelin",
-    "hardhat=contracts/node_modules/hardhat"
-  ],
+  "solidity.packageDefaultDependenciesDirectory": "node_modules",
   // Force use of correct formatter for solidity files
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
