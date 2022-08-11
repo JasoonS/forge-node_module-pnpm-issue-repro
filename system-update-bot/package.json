@@ -1,0 +1,32 @@
+{
+  "name": "system-update-bot",
+  "version": "1.0.0",
+  "description": "A bot to call update system state on contracts",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@ryyppy/rescript-promise": "^2.1.0",
+    "bs-fetch": "^0.6.2",
+    "ethers": "^5.5.2",
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^3.0.0",
+    "nodemon": "^2.0.7",
+    "prom-client": "^14.0.1",
+    "rescript": "^9.1.3",
+    "rescript-express": "^0.4.1",
+    "rescript-logger": "^2.1.0",
+    "webhook-discord": "^3.7.8"
+  },
+  "scripts": {
+    "dev": "nodemon src/Server.bs.js",
+    "start-dumb": "node src/index.js",
+    "start": "node src/Server.bs.js",
+    "start-testnet": "node src/index.js",
+    "res:build": "rescript",
+    "res:build-logs": "RES_LOG=* yarn res:build",
+    "res:start": "rescript build -w",
+    "res:clean": "rescript clean",
+    "res:start-logs": "RES_LOG=* yarn res:start",
+    "res:format": "rescript format -all"
+  }
+}

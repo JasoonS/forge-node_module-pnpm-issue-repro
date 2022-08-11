@@ -1,0 +1,9 @@
+node_modules
+lib
+generated
+generated-price-history
+build
+.graphql_ppx_cache
+.merlin
+scripts
+!scripts/deploy-networks.sh
